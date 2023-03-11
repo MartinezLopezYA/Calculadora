@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculadoraBasica</string>
+    <string name="txt_tittle">Operaciones Básicas</string>
+    <string name="txt_Uno">Numero 1</string>
+    <string name="txt_Dos">Numero 2</string>
+
+    <string name="txt_tittleDos">Operaciones trigonometricas</string>
+    <string name="txt_dato">Dato</string>
+</resources>

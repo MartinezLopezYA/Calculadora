@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTittleDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="@string/txt_tittleDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="@string/txt_dato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputDato"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:fontFamily="@font/jetbrains_mono"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/rbRaiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrains_mono"
+            android:text="RAIZ CUADRADA" />
+
+        <RadioButton
+            android:id="@+id/rbTangente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrains_mono"
+            android:text="TANGENTE" />
+
+        <RadioButton
+            android:id="@+id/rbSeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrains_mono"
+            android:text="SENO" />
+
+        <RadioButton
+            android:id="@+id/rbCoseno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrains_mono"
+            android:text="COSENO" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#673AB7"
+        android:text="CALCULAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDato"
+        android:fontFamily="@font/jetbrains_mono" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="ATRAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

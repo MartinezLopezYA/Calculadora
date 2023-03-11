@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#673AB7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="@string/txt_tittle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="@string/txt_Uno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="@string/txt_Dos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Uno" />
+
+    <EditText
+        android:id="@+id/inputUno"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:fontFamily="@font/jetbrains_mono"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputDos"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:fontFamily="@font/jetbrains_mono"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputUno" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/jetbrains_mono"
+        android:padding="10px"
+        android:text="SUMA"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDos" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/jetbrains_mono"
+        android:padding="10px"
+        android:text="RESTAR"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDos" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="MULTIPLICAR"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSumar" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="DIVIDIR"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:text="SIGUIENTE"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
