@@ -34,22 +34,26 @@ class Trigonometria: AppCompatActivity() {
             if (x.equals("")){
                 Toast.makeText(this, "Faltan campos", Toast.LENGTH_LONG).show()
             }else {
-                if (rbSeno.isChecked) {
-                    Toast.makeText(this, "El seno es: ${sin(x.toDouble())}", Toast.LENGTH_LONG)
-                        .show()
-                    reiniciarValores()
-                } else if (rbCoseno.isChecked) {
-                    Toast.makeText(this, "El seno es: ${cos(x.toDouble())}", Toast.LENGTH_LONG)
-                        .show()
-                    reiniciarValores()
-                } else if (rbTan.isChecked) {
-                    Toast.makeText(this, "El seno es: ${tan(x.toDouble())}", Toast.LENGTH_LONG)
-                        .show()
-                    reiniciarValores()
-                } else if (rbRaiz.isChecked) {
-                    Toast.makeText(this, "El seno es: ${sqrt(x.toDouble())}", Toast.LENGTH_LONG)
-                        .show()
-                    reiniciarValores()
+                if(!rbCoseno.isChecked && !rbSeno.isChecked && !rbTan.isChecked && !rbRaiz.isChecked){
+                    Toast.makeText(this, "No ha seleccionado ninguna acción", Toast.LENGTH_LONG).show()
+                }else {
+                    if (rbSeno.isChecked) {
+                        Toast.makeText(this, "El seno es: ${sin(x.toDouble())}", Toast.LENGTH_LONG)
+                            .show()
+                        reiniciarValores()
+                    } else if (rbCoseno.isChecked) {
+                        Toast.makeText(this, "El seno es: ${cos(x.toDouble())}", Toast.LENGTH_LONG)
+                            .show()
+                        reiniciarValores()
+                    } else if (rbTan.isChecked) {
+                        Toast.makeText(this, "El seno es: ${tan(x.toDouble())}", Toast.LENGTH_LONG)
+                            .show()
+                        reiniciarValores()
+                    } else if (rbRaiz.isChecked) {
+                        Toast.makeText(this, "El seno es: ${sqrt(x.toDouble())}", Toast.LENGTH_LONG)
+                            .show()
+                        reiniciarValores()
+                    }
                 }
             }
 
