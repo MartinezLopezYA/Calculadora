@@ -31,45 +31,59 @@ class MainActivity : AppCompatActivity() {
 
             val x = inputUno.text.toString()
             val y = inputDos.text.toString()
-            Toast.makeText(this, "La suma es: ${x.toInt()+y.toInt()}", Toast.LENGTH_LONG).show()
-            reiniciarValores()
-
+            if ((x.equals("") && y.equals("")) || (x.equals("") || y.equals(""))){
+                Toast.makeText(this, "Faltan campos", Toast.LENGTH_LONG).show()
+            }else {
+                Toast.makeText(this, "La suma es: ${x.toInt() + y.toInt()}", Toast.LENGTH_LONG)
+                    .show()
+                reiniciarValores()
+            }
         })
 
         btnRestar.setOnClickListener(View.OnClickListener {
 
             val a = inputUno.text.toString()
             val b = inputDos.text.toString()
-            Toast.makeText(this, "La resta es: ${a.toInt()-b.toInt()}", Toast.LENGTH_LONG).show()
-            reiniciarValores()
-
+            if ((a.equals("") && b.equals("")) || (a.equals("") || b.equals(""))){
+                Toast.makeText(this, "Faltan campos", Toast.LENGTH_LONG).show()
+            }else {
+                Toast.makeText(this, "La resta es: ${a.toInt() - b.toInt()}", Toast.LENGTH_LONG)
+                    .show()
+                reiniciarValores()
+            }
         })
 
         btnMultiplicar.setOnClickListener(View.OnClickListener {
 
             val m = inputUno.text.toString()
             val n = inputDos.text.toString()
-            Toast.makeText(this, "El producto es: ${m.toInt()*n.toInt()}", Toast.LENGTH_LONG).show()
-            reiniciarValores()
-
+            if ((m.equals("") && n.equals("")) || (m.equals("") || n.equals(""))){
+                Toast.makeText(this, "Faltan campos", Toast.LENGTH_LONG).show()
+            }else {
+                Toast.makeText(this, "El producto es: ${m.toInt() * n.toInt()}", Toast.LENGTH_LONG)
+                    .show()
+                reiniciarValores()
+            }
         })
 
         btnDividir.setOnClickListener(View.OnClickListener {
 
             val i = inputUno.text.toString()
             val j = inputDos.text.toString()
+            if ((i.equals("") && j.equals("")) || (i.equals("") || j.equals(""))){
+                Toast.makeText(this, "Faltan campos", Toast.LENGTH_LONG).show()
+            }else {
+                val x = i.toDouble()
+                val y = j.toDouble()
 
-            val x = i.toDouble()
-            val y = j.toDouble()
-
-            if (y == 0.0){
-                Toast.makeText(this, "No es posible dividir entre 0", Toast.LENGTH_LONG).show()
-                reiniciarValores()
-            }else{
-                Toast.makeText(this, "La división es: ${x/y}", Toast.LENGTH_LONG).show()
-                reiniciarValores()
+                if (y == 0.0) {
+                    Toast.makeText(this, "No es posible dividir entre 0", Toast.LENGTH_LONG).show()
+                    reiniciarValores()
+                } else {
+                    Toast.makeText(this, "La división es: ${x / y}", Toast.LENGTH_LONG).show()
+                    reiniciarValores()
+                }
             }
-
         })
 
         btnNext.setOnClickListener(View.OnClickListener {

@@ -31,20 +31,27 @@ class Trigonometria: AppCompatActivity() {
 
 
             val x = inputDato.text.toString()
-            if (rbSeno.isChecked){
-                Toast.makeText(this, "El seno es: ${sin(x.toDouble())}", Toast.LENGTH_LONG).show()
-                reiniciarValores()
-            }else if (rbCoseno.isChecked){
-                Toast.makeText(this, "El seno es: ${cos(x.toDouble())}", Toast.LENGTH_LONG).show()
-                reiniciarValores()
-            }else if (rbTan.isChecked){
-                Toast.makeText(this, "El seno es: ${tan(x.toDouble())}", Toast.LENGTH_LONG).show()
-                reiniciarValores()
-            }else if (rbRaiz.isChecked){
-                Toast.makeText(this, "El seno es: ${sqrt(x.toDouble())}", Toast.LENGTH_LONG).show()
-                reiniciarValores()
+            if (x.equals("")){
+                Toast.makeText(this, "Faltan campos", Toast.LENGTH_LONG).show()
+            }else {
+                if (rbSeno.isChecked) {
+                    Toast.makeText(this, "El seno es: ${sin(x.toDouble())}", Toast.LENGTH_LONG)
+                        .show()
+                    reiniciarValores()
+                } else if (rbCoseno.isChecked) {
+                    Toast.makeText(this, "El seno es: ${cos(x.toDouble())}", Toast.LENGTH_LONG)
+                        .show()
+                    reiniciarValores()
+                } else if (rbTan.isChecked) {
+                    Toast.makeText(this, "El seno es: ${tan(x.toDouble())}", Toast.LENGTH_LONG)
+                        .show()
+                    reiniciarValores()
+                } else if (rbRaiz.isChecked) {
+                    Toast.makeText(this, "El seno es: ${sqrt(x.toDouble())}", Toast.LENGTH_LONG)
+                        .show()
+                    reiniciarValores()
+                }
             }
-
 
         })
 
